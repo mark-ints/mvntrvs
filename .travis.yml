@@ -1,5 +1,13 @@
 language: java
 
-sprict:
+deploy:
+  provider: releases
+  api_key: '$ENCRYPTED_GITHUB_API_KEY'
+  file: target/releases/example-plugin-1.0-SNAPSHOT.zip 
+  skip_cleanup: true
+  on:
+    tags: true
+
+script:
   - mvn package -B
 
