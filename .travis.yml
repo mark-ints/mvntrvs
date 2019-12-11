@@ -1,14 +1,11 @@
 language: java
-
 deploy:
   provider: releases
-  api_key: 
-    secure: '$ENCRYPTED_GITHUB_API_KEY'
-  file: target/releases/example-plugin-1.0-SNAPSHOT.zip 
-  skip_cleanup: true
+  api_key:
+    secure: ORKrJdSMjv0KjzsLXfSd5nKSNNoRRoua5c0qzDEbC2b3fiXK3qKO743yAoEu+/yqKoOkN7fIe3/HJUDo03/xDsvET7LSWy7d04COUpV5ie7twzMCEBSleveDMMpMJC5NNVJI7VE99pyja436F6KEBQsZffODQvniq3Xc6noTLI8Hu2PUthylWVN+q5Mni8mOO1eWtZw/y6kEarhd8RSh5sTCEUFOriOyzopBcY30VpEiemO56i0Cn9QH6106b4axnFGRqTyCCuf0CqX43znPmo4G2nWoKtcJx3yNPkFEIPpe6rFVEvAmu85CbyA98pyxYlltUGTb9lmcXFGhOyZf6gzPTKtPrK6UkoOyZHfc3OGj0PYilSgC91cDqnquQI9EDAV5/shGYNkziBTvvuHlW319UYm5tvpqVgt+nm1Y0QvWj4iyGz5ouAl+p3L/L9zEjeJHeqN8znwM/chNBleJf4/84VFNP/1Ut/vJqupRt2s+TRCn4khqXzLsGqjax+lTv4+p8QUOhTgjIDdc7czvqCL0mW0h52cuR7CZNE69ITOGewhCD75L+LT3NcaONCQTjml0XurvLiaI+ryjsm+mf0K7QymZ8hxFtfyTw7nSOLc68Yy1mpCklbMayh0gsUNJIfnQgafuEUKNXeU8lCsHL4h4CRmYuMRIQQYpMUmDsEk=
+  file: target/releases/example-plugin-1.0-SNAPSHOT.zip
+  skip_clean: true
   on:
-    tags: true
-
+    repo: mark-ints/mvntrvs
 script:
-  - mvn package -B
-
+- mvn package -B
