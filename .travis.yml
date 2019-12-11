@@ -1,2 +1,5 @@
 language: java
 
+sprict:
+	- mvn package -B
+
