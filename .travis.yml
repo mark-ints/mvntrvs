@@ -2,7 +2,8 @@ language: java
 
 deploy:
   provider: releases
-  api_key: '$ENCRYPTED_GITHUB_API_KEY'
+  api_key: 
+    secure: '$ENCRYPTED_GITHUB_API_KEY'
   file: target/releases/example-plugin-1.0-SNAPSHOT.zip 
   skip_cleanup: true
   on:
