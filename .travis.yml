@@ -3,7 +3,7 @@ deploy:
   provider: releases
   api_key:
     secure: iOMNa6qnt57uWqaWpEiMmFjxD0H8hroyAtlbrtyIdihAnMqNzhP/OsFVHKpYa4Ebg7oq4YxTiNtdqrNZnQyG/o38GbTn/Vw0+SVqX059gttsk0Pnz8gQTw3xKA4b7s3vjlgDAC2TDtw9EGw7lxCxUA3JDGtqS5zTXDeEJY7bR6mBAiXK8kP4SiosLeCsm8/uvTf7xNkP5yigeweF49tiC3ZMCwe5fKGcSc8Njjuw9/XmIHGU3t5IJMJ7Q5VXLl3rt5NcFYveXFtRh8ahIaoVYroCMDNARAq4mm+de9EO/37mR4lXm7Cx12V/tPO5vut46AihV9lh/gR9/xocX+BBW1FRCmoiIGSw+60lBjWyw2qUjK032d3MSNQX15UARZh8ccwxfU+B6nHjQEh6EtbptNjhnZPv+i656zYuR66inZZlSyCz4CvmFpA3GOs/u3rIv8i9nPSAwrUUlMJrqSTxMk03sPslsd4uhuctD0WoJTOQuv1sbtXlwvOvYOyV6/Md+D642RGafQf5Ue/sQfgg9Q+NdnF54KFvGPINDAPFhHiIDxqedPRlCeZeRqkvTHK4SaKHc0w+2yQUhd4C50oocc1gV4THxdUWlpmwm7DF5dtTp1QfwJprMjxanhi067JrNoiIz8SVRdQu/dDVp5pShc+eJOu5TRr3WjkMWqDK1O8=
-  file: target/releases/*
+  file: target/releases/example-plugin-1.0-SNAPSHOT.zip
   skip_clean: true
   on:
     tags: true
