@@ -6,7 +6,6 @@ deploy:
   skip_cleanup: true
   file: target/releases/example-plugin-1.0-SNAPSHOT.zip
   on:
-    repo: mark-ints/mvntrvs
     tags: true
 script:
-- mvn package -B
+- mvn package
